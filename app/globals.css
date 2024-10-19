@@ -11,3 +11,9 @@
 .main-btn {
   @apply text-white hover:bg-secondary duration-300 w-fit py-2 px-4 rounded-full font-semibold;
 }
+.go-next {
+  @apply top-1/2 p-5 bg-gradient-to-br from-third to-secondary left-0 z-10 w-fit rounded-lg;
+}
+.go-prev {
+  @apply top-1/2 p-5 right-0 bg-gradient-to-br from-third to-secondary z-[11] w-fit rounded-lg translate-x-1/2 -translate-y-1/4;
+}

@@ -13,7 +13,8 @@
     "lava-landing-page": "file:",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/node": "^20",
