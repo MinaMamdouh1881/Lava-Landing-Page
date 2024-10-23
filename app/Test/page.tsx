@@ -53,8 +53,8 @@ function MySwiper() {
   ];
 
   return (
-    <div className='px-main w-full flex flex-row'>
-      <div className='w-4/5'>
+    <div className='relative grid grid-cols-12'>
+      <div className='col-span-10'>
         <Swiper
           spaceBetween={20}
           slidesPerView={2}
@@ -82,9 +82,9 @@ function MySwiper() {
               </div>
             </SwiperSlide>
           ))}
+          
         </Swiper>
-      </div>
-      <div className='w-1/5 relative flex flex-col-reverse items-center justify-center'>
+<div className='col-span-2'>
         <button className='go-prev'>
           <RightArrow />
         </button>
@@ -92,6 +92,8 @@ function MySwiper() {
           <LeftArrow />
         </button>
       </div>
+      </div>
+      
     </div>
   );
 }
