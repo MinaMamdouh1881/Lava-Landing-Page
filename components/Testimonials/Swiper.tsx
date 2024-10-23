@@ -58,8 +58,8 @@ function MySwiper() {
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 2 }}
+        viewport={{ once: true, amount: 'some' }}
+        transition={{ delay: 2.7 }}
         className='w-full xl:w-4/5'
       >
         <Swiper
@@ -100,10 +100,10 @@ function MySwiper() {
         </Swiper>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 2, duration: 0.5 }}
+        viewport={{ once: true, amount: 'all' }}
+        transition={{ delay: 2.5, duration: 0.5 }}
         className='w-1/5 relative hidden xl:flex flex-col-reverse items-center justify-center'
       >
         <button className='go-prev'>

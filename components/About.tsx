@@ -10,7 +10,7 @@ function About() {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 'some' }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <img src='/left-image.png' alt='left mobile' />
@@ -21,7 +21,7 @@ function About() {
               className=' w-1/6'
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               <img
@@ -32,9 +32,9 @@ function About() {
             </motion.div>
             <motion.div
               className='flex flex-col gap-5 w-5/6'
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 0.8, duration: 0.5 }}
             >
               <h3 className='font-semibold text-xl xlg:text-3xl'>
@@ -52,7 +52,7 @@ function About() {
               className=' w-1/6'
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <img
@@ -63,9 +63,9 @@ function About() {
             </motion.div>
             <motion.div
               className='flex flex-col gap-5 w-5/6'
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 0.9, duration: 0.5 }}
             >
               <h3 className='font-semibold text-xl xlg:text-3xl'>
@@ -82,7 +82,7 @@ function About() {
               className=' w-1/6'
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <img
@@ -93,9 +93,9 @@ function About() {
             </motion.div>
             <motion.div
               className='flex flex-col gap-5 w-5/6'
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 'all' }}
               transition={{ delay: 1, duration: 0.5 }}
             >
               <h3 className='font-semibold text-xl xlg:text-3xl'>

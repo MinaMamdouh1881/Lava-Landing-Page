@@ -10,21 +10,21 @@ function Navbar() {
       <h1 className='font-bold text-3xl tracking-widest'>LAVA</h1>
       <ul className='hidden md:flex gap-4 text-textColor text-nowrap font-semibold '>
         <a
-          href='#'
+          href='#home'
           onClick={() => setActive('home')}
           className={`hover:text-main ${active === 'home' ? 'text-main' : ''}`}
         >
           <li>HOME</li>
         </a>
         <a
-          href='#'
+          href='#about'
           onClick={() => setActive('about')}
           className={`hover:text-main ${active === 'about' ? 'text-main' : ''}`}
         >
           <li>ABOUT</li>
         </a>
         <a
-          href='#'
+          href='#testimonials'
           onClick={() => setActive('testimonials')}
           className={`hover:text-main ${
             active === 'testimonials' ? 'text-main' : ''
@@ -33,7 +33,7 @@ function Navbar() {
           <li>TESTIMONIALS</li>
         </a>
         <a
-          href='#'
+          href='#contact'
           onClick={() => setActive('contact-us')}
           className={`hover:text-main ${
             active === 'contact-us' ? 'text-main' : ''
@@ -71,33 +71,33 @@ function Navbar() {
         ></motion.span>
       </button>
       <motion.ul
-        initial={{ y: 150, x: 1000 }}
-        animate={{ x: toggle ? 0 : 1000 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ y: toggle ? 150 : 200, opacity: toggle ? 1 : 0 }}
         className='md:hidden absolute bg-white w-10/12 flex flex-col gap-4 text-textColor text-nowrap font-semibold px-4 py-4'
       >
         <a
-          href='#'
+          href='#home'
           onClick={() => setActive('home')}
           className='hover:text-main bg-textBg p-2 text-center hover:bg-textHoverBg'
         >
           <li>HOME</li>
         </a>
         <a
-          href='#'
+          href='#about'
           onClick={() => setActive('about')}
           className='hover:text-main bg-textBg p-2 text-center hover:bg-textHoverBg'
         >
           <li>ABOUT</li>
         </a>
         <a
-          href='#'
+          href='#testimonials'
           onClick={() => setActive('testimonials')}
           className='hover:text-main bg-textBg p-2 text-center hover:bg-textHoverBg'
         >
           <li>TESTIMONIALS</li>
         </a>
         <a
-          href='#'
+          href='#contact'
           onClick={() => setActive('contact-us')}
           className='hover:text-main bg-textBg p-2 text-center hover:bg-textHoverBg'
         >

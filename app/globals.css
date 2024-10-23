@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+html {
+  scroll-behavior: smooth !important;
+}
 .feature {
   @apply relative col-span-1 flex flex-col gap-5 justify-center items-center px-7 py-14 after:absolute after:top-0 after:left-5 after:text-[#fdefd9] after:text-[100px] after:font-semibold;
 

@@ -30,6 +30,7 @@ function ContactUs() {
   ];
   return (
     <div
+    id='contact'
       className='relative pt-[150px] mt-[100px]'
       style={{
         backgroundImage: `url('footer-bg.png')`,

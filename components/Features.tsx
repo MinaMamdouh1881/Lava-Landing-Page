@@ -2,13 +2,13 @@ import * as motion from 'framer-motion/client';
 
 function Features() {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 sm:px-10 lg:px-main mb-[300px]'>
+    <div id='about' className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 sm:px-10 lg:px-main mb-[300px]'>
       <motion.div
         className='feature z-10 after:content-["1"]'
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 'all' }}
+        transition={{ duration: 0.5 }}
       >
         <img
           src='/features-icon-1.png'
@@ -26,10 +26,10 @@ function Features() {
       </motion.div>
       <motion.div
         className='feature z-10 after:content-["2"]'
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true, amount: 'all' }}
+        transition={{ duration: 0.5 }}
       >
         <img
           src='/features-icon-2.png'
@@ -47,10 +47,10 @@ function Features() {
       </motion.div>
       <motion.div
         className='feature z-10 after:content-["3"]'
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 'all' }}
+        transition={{ duration: 0.5 }}
       >
         <img
           src='/features-icon-3.png'

@@ -1,11 +1,14 @@
 import * as motion from 'framer-motion/client';
 function Landing() {
   return (
-    <div className='w-full flex flex-col lg:flex-row-reverse justify-between mb-[300px]'>
+    <div
+      id='home'
+      className='w-full flex flex-col lg:flex-row-reverse justify-between mb-[100px]'
+    >
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 'some' }}
         transition={{ duration: 0.5 }}
         className='relative float-right ml-auto -z[1]'
       >
@@ -19,7 +22,7 @@ function Landing() {
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 'some' }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className='lg:w-1/2 max-lg:mt-5 max-md:px-2 max-lg:pr-main flex flex-col gap-4 justify-center pl-main'
       >
